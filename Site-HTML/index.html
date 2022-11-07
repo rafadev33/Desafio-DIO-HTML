@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Projeto DIO</title>
+</head>
+<body>
+    <h1>Módulo 1 - Primeiros passos</h1>
+    <hr />
+
+    <h2 id="Índice">Índice</h2>
+    <ul>
+        <li> <a href="#HTML">HTML, o que é isso?</a></li>
+        <li> <a href="#TAG">TAG, pra que serve?</a></li>
+        <li> <a href="#IDE">IDE, ferramenta de edição de texto</a></li>
+        <li> <a href="#Estrutura">Estrutura HTML</a></li>
+        <li> <a href="#Listas">Listas Ordenadas e Listas Não Ordenadas</a></li>
+        <li> <a href="#Referências">Referências</a></li>
+    </ul>
+
+    <hr>
+
+    <h3 id="HTML">HTML, o que é isso?</h3>
+    <p>
+        O termo <u><i><strong>HTML</strong></i></u>  é um acrônimo formado pelas iniciais de Hypertext Markup Language, que traduzido para o portugês significa Linguagem de Marcação de Hipertexto. É utilizada na construção de páginas Web. O documento HTML define a estrutura do conteúdo da da página web.
+        <br>
+        <br>
+        <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+            "Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web.<sup>1</sup>
+        </blockquote>
+        <br>
+        <br>
+        O HTML existe desde 1991 e atualmente está na versão 5, que veio recheada de recursos e funcionalidades que trazem melhorias para o desenvolvimento web, sua responsabilidade principal é demarcar a estrutura de uma página da web. Essa estrutura do HTML é formada por um conjunto de elementos, ou seja, os hipertextos, que se conectam entre si formando a página.
+    </p>
+    <small> <a href="#Índice">Voltar</a></small>
+    <hr>
+
+    <h3 id="TAG">TAG, pra que serve?</h3>
+    <p>T
+        AG, como o próprio nome em inglês sugere, serve para realizar marcações no documento HTML. Elas contém instruções que atribuem determinada caracteristica ao texto por elas marcado.
+        <br>
+        <br>
+        <blockquote>
+            Os navegadores interpretam essas instruções e a partir disso renderizam uma pagina. A forma mais comum de utilização das tags, são como delimitadores de estilo ou de conteúdo.<sup>2</sup>
+        </blockquote>
+        <br>
+        <br>
+        As tags são formadas por uma estrutura própria, iniciam com o sinal “menor que”, em seguida vem o nome daquele elemento e por fim, o sinal “maior que”. Podem ser dispostas em tags que precisam de fechamento e tags que fecham sozinhas (self-closing). O fechamento de uma tag será definido com uma barra (/), sendo que no caso das tags de auto fechamento, não há necessidade da presença desse caractere.
+    </p>
+    <small> <a href="#Índice">Voltar</a></small>
+    <hr>
+
+    <h3 id="IDE">IDE, ferramenta de edição de texto</h3>
+    <p>
+        <abbr title="Integrated Development Environment">IDE</abbr> , do inglês Integrated Development Environment <sub>Ambiente de Desenvolvimento Integrado</sub> é um programa de computador que reúne características e ferramentas de apoio ao desenvolvimento de software com o objetivo de agilizar este processo.
+        Um IDE geralmente consiste em:
+        <br>
+        <br>
+
+        <strong>Editor de código-fonte: </strong>é um editor de texto que auxilia na criação de código de software por meio de funcionalidades como destaque da sintaxe com indicadores visuais, recurso de preenchimento automático específico da linguagem e verificação de bugs durante a criação.
+        <br>
+        <strong>Automação de compilação local: </strong> são utilitários que automatizam tarefas simples e repetíveis durante a criação de uma compilação local do software usada pelo desenvolvedor. São tarefas como compilação de código-fonte em código binário, criação de pacotes de código binário e execução de testes automatizados.
+        <br>
+        <strong>Debugger: </strong> é um programa usado para testar outros programas e mostrar graficamente a localização do bug no código original.
+    </p>
+    <small> <a href="#Índice">Voltar</a></small>
+    <hr>
+
+    <h3 id="Estrutura">Estrutura HTML</h3>
+    <p>
+        O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código. Geralmente os editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não precisa se preocupar em decorá-la, mas é bom que faça. Veja abaixo como ela se inicia:
+        <br>
+        <br>
+        <img src="./imagens/Captura de Tela 2022-11-06 às 18.31.56.png" alt="inserir imagem que está na pasta Site-HTML">
+        <br>
+        <br>
+        É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:
+        <br>
+        <br>
+
+        <ul>
+            <li>Definição do documento (doctype)</li>
+            <li>Cabeça (head)</li>
+            <li>Corpo (body)</li>
+        </ul>
+    </p>
+    <small> <a href="#Índice">Voltar</a></small>
+    <hr>
+
+    <h3 id="Listas">Listas Ordenadas e Listas Não Ordenadas</h3>
+    <p>
+        <mark>A principal diferença entre a lista ordenada e a lista não-ordenada está na maneira com que os itens de cada lista são apresentados - a lista ordenada enumera os elementos; a lista não-ordenada coloca marcadores antes de cada elemento.</mark>
+        <br>
+        <br>
+        <strong>Listas Ordenadas</strong> 
+        <br>       
+        O Elemento HTML ol (ou Elemento HTML de lista ordenada) representa uma lista de itens ordenados. De forma característica esses itens ordenados em uma lista são mostrados com uma contagem que os precede, que pode ser de qualquer tipo, como numerais, letras, algarismos romanos, ou simples símbolos. Esse modelo numerado não é definido na descrição html da página, mas na folha de estilos CSS associada, pela propriedade.
+        <br>
+        <br>
+
+        <i>Exemplo</i> 
+        <br>
+        <br>
+        <img src="./imagens/Captura de Tela 2022-11-06 às 18.39.20.png" alt="inserir imagem que está na pasta Site-HTML">
+        <br>
+        <br>
+        A saída HTML acima será:
+        <ol>
+            <li>Primeiro Item</li>
+            <li>Segundo Item</li>
+            <li>Terceiro Item</li>
+        </ol>
+
+        <strong>Listas Não Ordenadas</strong> 
+        <br>
+        O elemento HTML ul (ou elemento HTML de Lista desordenada) representa uma lista de itens sem ordem rígida, isto é, uma coleção de itens que não trazem uma ordenação numérica e as suas posições, nessa lista, são irrelevantes. Caracteristicamente, os itens em uma lista desordenada são exibidos com um marcador que pode ter várias formas, como um ponto, um círculo, ou um quadrado. O tipo de marcador não é definido na descrição HTML da página, mas na CSS associada, utilizando a propriedade.
+        <br>
+        <br>
+
+        <i>Exemplo</i> 
+        <br>
+        <br>
+        <img src="./imagens/Captura de Tela 2022-11-06 às 18.42.52.png" alt="inserir imagem que está na pasta Site-HTML">
+        <br>
+        <br>
+        A HTML acima resulta em:
+
+        <ul>
+            <li>Primeiro Item</li>
+            <li>Segundo Item</li>
+            <li>Terceiro Item</li>
+        </ul>
+    </p>
+    <small> <a href="#Índice">Voltar</a></small>
+    <hr>
+
+    <h3 id="Referências">Referências</h3>
+    <p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/">https://developer.mozilla.org/en-US/</a></li>
+            <li><a href="https://www.alura.com.br/">https://www.alura.com.br/</a></li>
+            <li><a href="https://www.w3schools.com/">https://www.w3schools.com/</a></li>
+            <li><a href="https://www.dio.me/">https://www.dio.me/</a></li>
+        </ul>
+    </p>
+    <small> <a href="#Índice">Voltar</a></small>
+    <hr>
+
+    <h4>Citações</h4>
+        <ol>
+            <li>https://developer.mozilla.org/pt-BR/docs/Web/HTML</li>
+            <li>https://medium.com/@junioralves_11958/o-que-s%C3%A3o-tags-do-html-e-qual-a-sua-import%C3%A2ncia-cadc13b00742</li>
+        </ol>
+    <h5> A tag <del>&lt;font&gt;</del></h5>
+        <p style="font-size:70%;">Foi usada no HTML 4 para especificar a face da fonte, o tamanho da fonte e a cor do texto. Não suportada no HTML 5.</p>
+    <h6></h6>
+   
+
+    Inserir os textos com tags html e links e subir no Github
+    
+</body>
+</html>
